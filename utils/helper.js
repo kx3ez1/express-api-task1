@@ -3,4 +3,11 @@ function makeSongUrl(page=1, query=" ",n=10) {
 }
 
 
+const makeDirectSongUrl = (encryptedMediaUrl) => {
+    encryptedMediaUrl = encodeURIComponent(encryptedMediaUrl);
+    return `https://www.jiosaavn.com/api.php?__call=song.generateAuthToken&url=${encryptedMediaUrl}&bitrate=320&api_version=4&_format=json&ctx=web6dot0&_marker=0`
+}
+
+
 exports.makeSongUrl = makeSongUrl;
+exports.makeDirectSongUrl = makeDirectSongUrl;
