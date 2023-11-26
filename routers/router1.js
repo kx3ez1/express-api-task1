@@ -25,7 +25,7 @@ router1.get('/d', async (req, res) => {
         const response = await axios.get(url);
         let downloadUrl = response.data.auth_url;
         if (downloadUrl) {
-            res.send(downloadUrl);
+            res.send({'url':downloadUrl});
         } else {
             res.status(404).send('Song not found');
         }
