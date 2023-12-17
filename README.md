@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://fl0.com/" target="blank">
-    <img src="https://user-images.githubusercontent.com/88681427/217122968-e6132cad-1944-4ebe-9ec1-105af6a18c4f.png">
-  </a>
-</p>
+
 
 <h2 align="center">Node.js Quickstart</h2>
 <p align="center">Backend engineering, supercharged.</p>
