@@ -1,5 +1,3 @@
-
-
 <h2 align="center">Node.js Quickstart</h2>
 <p align="center">Backend engineering, supercharged.</p>
 
