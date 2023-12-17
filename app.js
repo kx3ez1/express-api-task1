@@ -13,8 +13,8 @@ app.use(function (req, res, next) {
 });
 
 // add router
-const router1 = require('./routers/router1');
-app.use('/v1/search', router1);
+app.use('/v1/search', require('./routers/router1'));
+app.use('/v1', require('./routers/router2'));
 
 
 app.listen(port, () => {
