@@ -1,7 +1,7 @@
 let axios = require("axios");
 const helper = require("./helper");
 
-const host = helper.host;
+const apiRoot = helper.apiRoot;
 
 const makeRequest = async (url, language) => {
   let cookieData = `DL=english; L=${language}`;
@@ -17,12 +17,12 @@ const makeRequest = async (url, language) => {
 };
 
 const requestTrendingData = async (language = "telugu") => {
-  let url = `${host}?__call=webapi.getLaunchData&api_version=4&_format=json&_marker=0&ctx=wap6dot0`;
+  let url = `${apiRoot}?__call=webapi.getLaunchData&api_version=4&_format=json&_marker=0&ctx=wap6dot0`;
   return await makeRequest(url, language);
 };
 
 const getNewReleasesAlbumsData = async (language = "telugu") => {
-  let url = `${host}?__call=content.getAlbums&api_version=4&_format=json&_marker=0&ctx=wap6dot0`;
+  let url = `${apiRoot}?__call=content.getAlbums&api_version=4&_format=json&_marker=0&ctx=wap6dot0`;
   return await makeRequest(url, language);
 };
 
